@@ -35,20 +35,17 @@ var ollFoto = ['imga/1_лиса.jpg',
 
 
 var length_start_ollFoto = 0;
-var length_finish_ollFoto = ollFoto.length + 1;
+var length_finish_ollFoto = ollFoto.length; 
 // добавила к длине + 1, так как буду высчитивать рандомное число
 // по формуде внизу, если дилинна масива равно 11, то умножая на переменную равную 12, выбьет рандомное число с 0 до 11
 
-var random = Math.floor(Math.random() * length_finish_ollFoto);
+var random = Math.floor(Math.random() * length_finish_ollFoto); 
+
 
 
 
 picture.src = ollFoto[random]; // подгружаем рандомную картинку
 proverbs.innerText = ollProverbs[random]; // подгружаем рандомный proverbs
-
-
-
-
 
 
 
